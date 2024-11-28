@@ -1,0 +1,141 @@
+/* Estilo geral para o body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* Estilo para o header */
+header {
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    justify-content: space-between; /* Espaço máximo entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Garante que o header ocupe toda a largura da tela */
+    padding: 10px 20px; /* Adiciona espaçamento ao redor do header */
+}
+
+/* Estilo para o container da imagem e texto (à esquerda) */
+.header-left {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no centro verticalmente */
+}
+
+/* Estilo para a imagem dentro do header */
+header > .header-left > img {
+    border: 5px solid rgb(7, 182, 7); /* Define a borda de 5px, cor verde e estilo sólido */
+    border-radius: 50%; /* Borda arredondada */
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Espaço entre a imagem e o título */
+}
+
+/* Estilo para o título dentro do header */
+header > .header-left > h2 {
+    margin: 0; /* Remove a margem do título */
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+}
+
+/* Estilo para o container dos botões */
+.button {
+    margin-right: 130px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões */
+.button > button {
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(7, 182, 7);
+    border: none;
+    border-radius: 4px;
+}
+
+.button > button:hover {
+    background-color: green;
+}
+/* Layout principal */
+#home {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos das seções da esquerda e direita */
+.left, .right {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os veículos (cards) */
+.veiculos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para o container de cada veículo */
+.container_veiculo {
+    display: flex; /* Imagem à esquerda e texto à direita */
+    align-items: flex-start;
+    width: 400px;
+    background-color: #111;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para a imagem do veículo */
+.imagem img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo para o texto (info) */
+.info {
+    padding: 0px;
+    flex-direction: column;
+    font-size: 14px;
+    display: flex;
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para os títulos e textos */
+.container_veiculo h2 {
+    color: white;
+    margin: 0;
+}
+
+.container_veiculo span {
+    color: #febe01;
+    font-weight: bold;
+}
+
+/* Estilo para os botões */
+.container_veiculo button {
+    border: none;
+    background-color: #febe01;
+    color: #332200;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 0.9em; /* Tamanho da fonte reduzido */
+    padding: 6px 15px; /* Menor padding para diminuir o tamanho */
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.container_veiculo button:hover {
+    background-color: #d4a800;
+}
+
+p{
+    padding: 0px;
+    margin-bottom: 5px;
+}
